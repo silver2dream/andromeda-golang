@@ -5,7 +5,10 @@ import (
 	"math"
 )
 
+// BIT_MOVE_TIMES was scaled times
 const BIT_MOVE_TIMES = 10
+
+// MULTIPLIER_FACTOR was factor
 const MULTIPLIER_FACTOR = 1 << BIT_MOVE_TIMES
 
 type IFInt interface {
@@ -26,6 +29,7 @@ type IFInt interface {
 	ToString() string
 }
 
+// FInt is fixed point struct
 type FInt struct {
 	scaledValue int
 }
